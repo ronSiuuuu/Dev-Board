@@ -1,26 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Board</title>
     <!-- daisy ui and tailwind cdn -->
-     
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- font awesome cdn -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body >
+    <header >
+      <nav
+        class="w-11/12 mx-auto flex justify-between shadow-md rounded-md p-3"
+      >
+        <div class="flex gap-2">
+          <img class="max-w-12" src="assets/logo.png" alt="" />
+
+          <h3 class="text-4xl">Dev<span class="font-bold">Board</span></h3>
+        </div>
+
+        <div class="flex gap-8">
+          <div
+            class="max-w-36 items-center justify-center flex gap-2 bg-slate-100 rounded-3xl p-3"
+          >
+            <img
+              class="max-w-8 max-h-8"
+              src="assets/fi-sr-checkbox.png"
+              alt=""
+            />
+            <h3 class="font-bold text-3xl" id="Task-completed">23</h3>
+          </div>
+          <span id="theme-btn" class="max-w-12 max-h-12 bg-slate-100 rounded-full p-2"
+            ><img src="assets/theme-btn.png" alt=""
+          /></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto mt-5  z-10">
+      <!-- main section -->
+      <div class="grid grid-cols-4 gap-4">
+        <section class="shadow-md rounded-md col-span-3 ">
+          <div class="flex gap-6 justify-between p-4">
+            <div
+              class="flex bg-slate-100 rounded-md max-w-52 items-center gap-3 p-3"
+            >
+              <span class="max-w-8 max-h-8 bg-white rounded-full p-2"
+                ><img src="assets/fi-sr-checkbox.png" alt=""
+              /></span>
+              <h3>
+                Task Assigned <br /> <span id="Task-assigned" class="text-3xl font-bold">6</span>
+              </h3>
+            </div>
+            <div
+              class="flex flex-1 gap-3 items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-md p-3"
+            >
+              <img class="max-w-16 max-h-10" src="assets/board.png" alt="" />
+              <h3 class="text-white">
+                Discover Something <br />
+                New Today! 
+              </h3>
+            </div>
+
+            <div
+              class="flex bg-slate-100 rounded-md max-w-52 items-center gap-3 p-3"
+            >
+              <span class="max-w-8 max-h-8 bg-white rounded-full p-2"
+                ><img src="assets/calender.png" alt=""
+              /></span>
+
+              <h3>Wed ,<br /><span class="font-bold">Jul 28 2025</span>  </h3>
+            </div>
+          </div>
+        
+
+          <!-- main section card -->
+          <section class="mt-4 p-6 grid grid-cols-3  gap-4 ">
+          
+                <div class="bg-slate-100 p-4 space-y-4  rounded-md ">
+                  <h1 class="bg-white p-2 rounded-md max-w-28 text-center">
+                    ShopEase
+                  </h1>
+                  <h3 class="font-semibold ">Fix Mobile Button Issue</h3>
+                  <p class="bg-white p-2 rounded-md  ">
+                    Debug using Chrome DevTools, check for overlapping elements 
+                  </p>
+                  <div class="flex justify-between gap-4">
+                    <h3>
+                      Deadline <br />
+                      <span class="font-medium text-sm">21 March 2025</span>
+                    </h3>
+                    <button class="btn btn-primary p-2">Completed</button>
+                  </div>
+                  </div>
+               
+                  <div class="bg-slate-100 p-4 space-y-4 rounded-md">
+                    <h1 class="bg-white p-2 rounded-md max-w-28 text-center">
+                        CloudSync
+                    </h1>
+                    <h3 class="font-semibold ">Add Dark Mode</h3>
+                    <p class="bg-white p-1 rounded-md ">
+                        Debug using Chrome DevTools, check for overlapping elements
+                    </p>
+                    <div class="flex justify-between gap-2">
+                      <h3>
+                        Deadline <br />
+                        <span class="font-medium text-sm">21 March 2025</span>
+                      </h3>
+                      <button class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
 
 
-</head>
-<body>
+                    <div class="bg-slate-100 p-4 space-y-4 rounded-md">
+                        <h1 class="bg-white p-2 rounded-md max-w-28  text-center">
+                            SwiftPay
+                        </h1>
+                        <h3 class="font-semibold ">Optimize  Home page </h3>
+                        <p class="bg-white p-2 rounded-md ">
+                            Debug using Chrome DevTools, check for overlapping elements
+                        </p>
+                        <div class="flex justify-between gap-2">
+                          <h3>
+                            Deadline <br />
+                            <span class="font-medium text-sm">21 March 2025</span>
+                          </h3>
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                        </div>
+        
 
-   
+
+
+
+          
+                <div class="bg-slate-100 p-4 space-y-4  rounded-md ">
+                  <h1 class="bg-white p-2 rounded-md max-w-28 text-center">
+                    Meta
+                  </h1>
+                  <h3 class="font-semibold ">Add new emoji 🤲</h3>
+                  <p class="bg-white p-2 rounded-md  ">
+                    Debug using Chrome DevTools, check for overlapping elements
+                  </p>
+                  <div class="flex justify-between gap-4">
+                    <h3>
+                      Deadline <br />
+                      <span class="font-medium text-sm">21 March 2025</span>
+                    </h3>
+                    <button class="btn btn-primary p-2">Completed</button>
+                  </div>
+                  </div>
+               
+                  <div class="bg-slate-100 p-4 space-y-4 rounded-md">
+                    <h1 class="bg-white p-2 rounded-md max-w-28 text-center">
+                        Google LLC
+                    </h1>
+                    <h3 class="font-semibold ">Integrate OpenAI API </h3>
+                    <p class="bg-white p-1 rounded-md ">
+                      Debug using Chrome DevTools, check for overlapping elements
+                    </p>
+                    <div class="flex justify-between gap-2">
+                      <h3>
+                        Deadline <br />
+                        <span class="font-medium text-sm">21 March 2025</span>
+                      </h3>
+                      <button class="btn btn-primary ">Completed</button>
+                    </div>
+                    </div>
+
+
+                    <div class="bg-slate-100 p-4 space-y-4 rounded-md">
+                        <h1 class="bg-white p-2 rounded-md max-w-28  text-center">
+                            Glassdoar
+                        </h1>
+                        <h3 class="font-semibold ">Improve Job searching </h3>
+                        <p class="bg-white p-2 rounded-md ">
+                          Debug using Chrome DevTools, check for overlapping elements
+                        </p>
+                        <div class="flex justify-between gap-2">
+                          <h3>
+                            Deadline <br />
+                            <span class="font-medium text-sm">21 March 2025</span>
+                          </h3>
+                          <button class="btn btn-primary">Completed</button>
+                        </div>
+                        </div>
+        
 
 
 
 
 
+           
+          </section>
+        </section>
+        <!-- activity section -->
+        <section class="shadow-md rounded-md min-h-80 p-3 col-span-1">
+          <div class="space-y-3">
+            <div class="flex flex-col items-center justify-center gap-2">
+              <h1 class="text-center">
+                <i class="fa-solid fa-clock-rotate-left"></i> Activity Log
+              </h1>
+              <button class="btn bg-[#3752FD] hover:bg-blue-700 text-white" id="clear-btn">Clear History</button>
+            </div>
+            <div id="activityLog-container" class="space-y-3"> 
 
-    <script src="script/dev.js"></script>
-</body>
+            </div>
+          </div>
+          
+
+
+
+
+        </section>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
