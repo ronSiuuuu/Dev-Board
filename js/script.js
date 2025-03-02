@@ -28,14 +28,14 @@ let parent = event.target.parentElement.parentElement;
 let title = parent.children[1].innerText;
 const activityLog = document.getElementById('activityLog-container');
 let history = document.createElement ('p');
-history.innerText = ` You have Complete The Task ${title} at ${completedTime}
+history.innerText = ` You have Completed The Task ${title} at ${completedTime}
                     
 `
 history.classList.add('bg-slate-100', 'p-2', 'rounded-md');
 activityLog.appendChild(history);
 
 if (TaskAssignedDone===0){
-    alert('Congrats! you have done the task successfully');
+    alert('Congrats! you have done all task successfully');
 }
 
 
