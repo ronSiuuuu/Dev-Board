@@ -19,9 +19,9 @@
     />
   </head>
   <body >
-    <header >
+    <header class="pt-5" >
       <nav
-        class="w-11/12 mx-auto flex justify-between shadow-md rounded-md p-3"
+        class="w-11/12 mx-auto flex justify-between bg-white shadow-md rounded-md p-3 "
       >
         <div class="flex gap-2">
           <img class="max-w-12" src="assets/logo.png" alt="" />
@@ -47,10 +47,10 @@
       </nav>
     </header>
 
-    <main class="w-11/12 mx-auto mt-5  z-10">
+    <main class="w-11/12 mx-auto mt-5  pb-5 ">
       <!-- main section -->
       <div class="grid grid-cols-4 gap-4">
-        <section class="shadow-md rounded-md col-span-3 ">
+        <section class="bg-white shadow-md rounded-md col-span-3 ">
           <div class="flex gap-6 justify-between p-4">
             <div
               class="flex bg-slate-100 rounded-md max-w-52 items-center gap-3 p-3"
@@ -63,7 +63,7 @@
               </h3>
             </div>
             <div
-              class="flex flex-1 gap-3 items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-md p-3"
+             id="Discover" class="flex flex-1 gap-3 items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-md p-3"
             >
               <img class="max-w-16 max-h-10" src="assets/board.png" alt="" />
               <h3 class="text-white">
@@ -79,7 +79,9 @@
                 ><img src="assets/calender.png" alt=""
               /></span>
 
-              <h3>Wed ,<br /><span class="font-bold">Jul 28 2025</span>  </h3>
+             <span id="date">
+              
+             </span>
             </div>
           </div>
         
@@ -205,7 +207,7 @@
           </section>
         </section>
         <!-- activity section -->
-        <section class="shadow-md rounded-md min-h-80 p-3 col-span-1">
+        <section class="bg-white shadow-md rounded-md  p-3 col-span-1">
           <div class="space-y-3">
             <div class="flex flex-col items-center justify-center gap-2">
               <h1 class="text-center">

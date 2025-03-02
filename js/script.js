@@ -63,6 +63,20 @@ document.getElementById('theme-btn').addEventListener('click', function () {
     document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
     
 });
-    
 
+document.getElementById('Discover').addEventListener('click',function(){
+    window.location.href = "Feq.html";
+})
+ 
+const parentDate = document.getElementById('date');
+const UpdatedDate = document.createElement('p');
+const currentDate =  new Date ().toDateString().split(' ');
+const day = document.createTextNode(currentDate[0]);
+const br = document.createElement('br');
+const rest = document.createTextNode(`${currentDate[1]} ${currentDate[2]} ${currentDate[3]}`)
+
+UpdatedDate.appendChild(day);
+UpdatedDate.appendChild(br);
+UpdatedDate.appendChild(rest);
+parentDate.appendChild(UpdatedDate);
 
